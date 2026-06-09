@@ -1,0 +1,46 @@
+{
+  "name": "@a5c-ai/atlas-antigravity-cli",
+  "version": "5.0.1-staging.28347f861706",
+  "description": "Turn a stated need into a full system design by mining the Atlas knowledge graph.",
+  "scripts": {
+    "deploy": "npm publish --access public",
+    "deploy:staging": "npm publish --access public --tag staging",
+    "plugin:install": "node bin/install.js --global",
+    "plugin:uninstall": "node bin/uninstall.js --global",
+    "team:install": "node scripts/team-install.js"
+  },
+  "bin": {
+    "atlas-antigravity-cli": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "commands/",
+    "scripts/",
+    "plugin.json",
+    "README.md",
+    "versions.json",
+    "package.json"
+  ],
+  "keywords": [
+    "atlas",
+    "antigravity-cli",
+    "orchestration"
+  ],
+  "author": "a5c.ai",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@a5c-ai/babysitter-sdk": "5.0.1-staging.28347f861706"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a5c-ai/atlas-antigravity.git"
+  },
+  "homepage": "https://github.com/a5c-ai/atlas-antigravity#readme",
+  "bugs": {
+    "url": "https://github.com/a5c-ai/atlas-antigravity/issues"
+  }
+}
